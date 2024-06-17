@@ -15,15 +15,19 @@ The Random Quotes App is a simple web application that generates random quotes. 
 
 ## Getting Started
 
+## Install JSON Server
+If you don't have JSON Server installed globally, you can install it using npm:
+npm install -g json-server
+
+## Start JSON Server
+Navigate to the project directory and start JSON Server with the provided data.json file:
+json-server --watch data.json
+
 ### Clone the Repository
 ```bash
 git clone https://github.com/your-username/random-quotes-app.git
 cd random-quotes-app
 
-## Install JSON Server
-- If you don't have JSON Server installed globally, you can install it using npm:
-- npm install -g json-server
 
-## Start JSON Server
-- Navigate to the project directory and start JSON Server with the provided data.json file:
-- json-server --watch data.json
+
+
