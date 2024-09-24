@@ -10,9 +10,11 @@ let mood = document.querySelector(".mood");
 let myInterval;
 
 async function fetchQuotes() {
-  let data = await fetch("http://localhost:3000/quotes");
+  let data = await fetch(
+    "https://tarekahmed550.github.io/world_wise_data/random_quotes.json"
+  );
   let result = await data.json();
-  return result;
+  return result.quotes;
 }
 
 async function generateQuotes() {
